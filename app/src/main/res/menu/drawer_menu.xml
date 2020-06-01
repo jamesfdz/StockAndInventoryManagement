@@ -1,9 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:checkableBehavior="single">
-        <item android:id="@+id/nav_home"
-            android:title="Home"></item>
-        <item android:id="@+id/nav_setting"
-            android:title="Settings"></item>
+
+    <group android:id="@+id/main"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main_menu"
+            android:icon="@android:drawable/ic_dialog_dialer"
+            android:title="Main Menu"
+            android:iconTint="@color/colorPrimary"/>
     </group>
+    <group android:id="@+id/reports"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_goods"
+            android:title="Goods" />
+        <item
+            android:id="@+id/nav_documents"
+            android:title="Documents" />
+        <item
+            android:id="@+id/nav_expenses"
+            android:title="Expenses" />
+        <item
+            android:id="@+id/nav_reports"
+            android:title="Reports" />
+    </group>
+    <group
+        android:id="@+id/custSup"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_suppliers"
+            android:title="Suppliers" />
+        <item
+            android:id="@+id/nav_customers"
+            android:title="Customers" />
+        <item
+            android:id="@+id/nav_stores"
+            android:title="Stores" />
+    </group>
+    <group
+        android:id="@+id/setting"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_question"
+            android:title="Question or suggestion" />
+        <item
+            android:id="@+id/nav_help"
+            android:title="Help" />
+        <item
+            android:id="@+id/nav_new"
+            android:title="What's new" />
+    </group>
+
+
 </menu>

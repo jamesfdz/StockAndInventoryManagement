@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/nav_main_menu">
+
+    <fragment
+        android:id="@id/nav_main_menu"
+        android:name="com.example.stockandinventorymanagement.fragments.MainMenuFragment"
+        android:label="Stock and Inventory"
+        tools:layout="@layout/fragment_main_menu" />
+    <fragment
+        android:id="@id/nav_goods"
+        android:name="com.example.stockandinventorymanagement.fragments.GoodsFragment"
+        android:label="Goods"
+        tools:layout="@layout/fragment_goods" />
+    <fragment
+        android:id="@id/nav_documents"
+        android:name="com.example.stockandinventorymanagement.fragments.DocumentsFragment"
+        android:label="Documents"
+        tools:layout="@layout/fragment_documents" />
+    <fragment
+        android:id="@id/nav_expenses"
+        android:name="com.example.stockandinventorymanagement.fragments.ExpensesFragment"
+        android:label="Expenses"
+        tools:layout="@layout/fragment_expenses" />
+    <fragment
+        android:id="@id/nav_reports"
+        android:name="com.example.stockandinventorymanagement.fragments.ReportsFragment"
+        android:label="Reports"
+        tools:layout="@layout/fragment_reports" />
+    <fragment
+        android:id="@id/nav_suppliers"
+        android:name="com.example.stockandinventorymanagement.fragments.SuppliersFragment"
+        android:label="Suppliers"
+        tools:layout="@layout/fragment_suppliers" />
+    <fragment
+        android:id="@id/nav_customers"
+        android:name="com.example.stockandinventorymanagement.fragments.CustomersFragment"
+        android:label="Customers"
+        tools:layout="@layout/fragment_customers" />
+    <fragment
+        android:id="@id/nav_stores"
+        android:name="com.example.stockandinventorymanagement.fragments.StoresFragment"
+        android:label="Stores"
+        tools:layout="@layout/fragment_stores" />
+    <fragment
+        android:id="@id/nav_settings"
+        android:name="com.example.stockandinventorymanagement.fragments.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@id/nav_help"
+        android:name="com.example.stockandinventorymanagement.fragments.HelpFragment"
+        android:label="Help"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@id/nav_new"
+        android:name="com.example.stockandinventorymanagement.fragments.WhatsNewFragment"
+        android:label="What's New"
+        tools:layout="@layout/fragment_whats_new" />
+</navigation>

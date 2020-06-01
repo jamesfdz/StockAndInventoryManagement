@@ -1,4 +1,4 @@
-package com.example.stockandinventorymanagement.ui.settings;
+package com.example.stockandinventorymanagement.fragments;
 
 import android.content.Context;
 import android.net.Uri;
@@ -13,18 +13,16 @@ import android.view.ViewGroup;
 import com.example.stockandinventorymanagement.R;
 
 
-public class settingFragment extends Fragment {
+public class CustomersFragment extends Fragment {
 
-
-    public settingFragment() {
+    public CustomersFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_setting, container, false);
+        return inflater.inflate(R.layout.fragment_customers, container, false);
     }
 }
