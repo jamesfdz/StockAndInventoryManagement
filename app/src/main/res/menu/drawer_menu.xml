@@ -5,7 +5,7 @@
         android:checkableBehavior="single">
         <item
             android:id="@+id/nav_main_menu"
-            android:icon="@android:drawable/ic_dialog_dialer"
+            android:icon="@drawable/menu_home"
             android:title="Main Menu"
             android:iconTint="@color/colorPrimary"/>
     </group>
@@ -13,15 +13,23 @@
         android:checkableBehavior="single">
         <item
             android:id="@+id/nav_goods"
+            android:icon="@drawable/menu_goods"
+            android:iconTint="@color/colorPrimary"
             android:title="Goods" />
         <item
             android:id="@+id/nav_documents"
+            android:icon="@drawable/menu_docs"
+            android:iconTint="@color/colorPrimary"
             android:title="Documents" />
         <item
             android:id="@+id/nav_expenses"
+            android:icon="@drawable/menu_expenses"
+            android:iconTint="@color/colorPrimary"
             android:title="Expenses" />
         <item
             android:id="@+id/nav_reports"
+            android:icon="@drawable/menu_reports"
+            android:iconTint="@color/colorPrimary"
             android:title="Reports" />
     </group>
     <group
@@ -29,12 +37,18 @@
         android:checkableBehavior="single">
         <item
             android:id="@+id/nav_suppliers"
+            android:icon="@drawable/menu_suppliers"
+            android:iconTint="@color/colorPrimary"
             android:title="Suppliers" />
         <item
             android:id="@+id/nav_customers"
+            android:icon="@drawable/menu_customers"
+            android:iconTint="@color/colorPrimary"
             android:title="Customers" />
         <item
             android:id="@+id/nav_stores"
+            android:icon="@drawable/menu_store"
+            android:iconTint="@color/colorPrimary"
             android:title="Stores" />
     </group>
     <group
@@ -42,15 +56,23 @@
         android:checkableBehavior="single">
         <item
             android:id="@+id/nav_settings"
+            android:icon="@drawable/menu_settings"
+            android:iconTint="@color/colorPrimary"
             android:title="Settings" />
         <item
             android:id="@+id/nav_question"
+            android:icon="@drawable/menu_question"
+            android:iconTint="@color/colorPrimary"
             android:title="Question or suggestion" />
         <item
             android:id="@+id/nav_help"
+            android:icon="@drawable/menu_help"
+            android:iconTint="@color/colorPrimary"
             android:title="Help" />
         <item
             android:id="@+id/nav_new"
+            android:icon="@drawable/menu_new"
+            android:iconTint="@color/colorPrimary"
             android:title="What's new" />
     </group>
 
