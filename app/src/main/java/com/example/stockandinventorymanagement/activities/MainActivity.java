@@ -11,6 +11,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.example.stockandinventorymanagement.R;
 import com.google.android.material.navigation.NavigationView;
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(R.id.nav_main_menu, R.id.nav_goods, R.id.nav_documents,
-                R.id.nav_expenses, R.id.nav_reports, R.id.nav_suppliers, R.id.nav_customers, R.id.nav_settings,
+                R.id.nav_expenses, R.id.nav_reports, R.id.nav_suppliers, R.id.nav_customers, R.id.nav_stores, R.id.nav_settings,
                 R.id.nav_question, R.id.nav_help, R.id.nav_new)
                 .setDrawerLayout(drawerLayout)
                 .build();
@@ -48,6 +49,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        if(item.getItemId() == R.id.sorting){
+            Toast.makeText(this, "Sort", Toast.LENGTH_SHORT).show();
+            return true;
+        }
 
         NavController navController = Navigation.findNavController(this, R.id.fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration) || super.onSupportNavigateUp();
