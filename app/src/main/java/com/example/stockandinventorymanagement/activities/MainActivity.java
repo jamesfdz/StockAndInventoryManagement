@@ -50,9 +50,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-        if(item.getItemId() == R.id.sorting){
-            Toast.makeText(this, "Sort", Toast.LENGTH_SHORT).show();
-            return true;
+        switch (item.getItemId()){
+            case R.id.sorting:
+                Toast.makeText(this, "Sorting", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.help:
+                Toast.makeText(this, "Help", Toast.LENGTH_SHORT).show();
+                return true;
+            default:
+                break;
         }
 
         NavController navController = Navigation.findNavController(this, R.id.fragment);

@@ -9,7 +9,35 @@
         android:id="@id/nav_main_menu"
         android:name="com.example.stockandinventorymanagement.fragments.MainMenuFragment"
         android:label="Stock and Inventory"
-        tools:layout="@layout/fragment_main_menu" />
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/action_nav_main_menu_to_nav_goods"
+            app:destination="@id/nav_goods" />
+        <action
+            android:id="@+id/action_nav_main_menu_to_nav_documents"
+            app:destination="@+id/nav_documents"/>
+        <action
+            android:id="@+id/action_nav_main_menu_to_nav_expenses"
+            app:destination="@+id/nav_expenses"/>
+        <action
+            android:id="@+id/action_nav_main_menu_to_nav_reports"
+            app:destination="@+id/nav_reports"/>
+        <action
+            android:id="@+id/action_nav_main_menu_to_nav_suppliers"
+            app:destination="@+id/nav_suppliers"/>
+        <action
+            android:id="@+id/action_nav_main_menu_to_nav_customers"
+            app:destination="@+id/nav_customers"/>
+        <action
+            android:id="@+id/action_nav_main_menu_to_nav_settings"
+            app:destination="@+id/nav_settings"/>
+        <action
+            android:id="@+id/action_nav_main_menu_to_nav_help"
+            app:destination="@+id/nav_help"/>
+        <action
+            android:id="@+id/action_nav_main_menu_to_nav_new"
+            app:destination="@+id/nav_new"/>
+    </fragment>
     <fragment
         android:id="@id/nav_goods"
         android:name="com.example.stockandinventorymanagement.fragments.GoodsFragment"
