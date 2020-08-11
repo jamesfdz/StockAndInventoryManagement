@@ -1,9 +1,17 @@
 <resources>
     <string name="app_name">Stock And Inventory Management</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="nav_header_desc">Navigation Header</string>
-    <string name="nav_header_title">Android Srudio</string>
+    <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
+
+<!--    What's new content  -->
+    <string name="whats_new_content">
+        Version 1.0 :\n
+        \n
+            \t\t\t&#8226; Add Products\n
+            \t\t\t&#8226; Add Customers\n
+            \t\t\t&#8226; Add Suppliers\n
+    </string>
 </resources>
