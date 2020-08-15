@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "467895928331",
+    "firebase_url": "https://stock-and-inventory-management.firebaseio.com",
+    "project_id": "stock-and-inventory-management",
+    "storage_bucket": "stock-and-inventory-management.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467895928331:android:cb4c6c29528e104996e90e",
+        "android_client_info": {
+          "package_name": "com.example.stockandinventorymanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467895928331-3fvsuh3qnnq5u2uf2n3ovuhn1q8k5kro.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1yXdNTMflBHh-WUuCIgx9H5aVUP-PPaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "467895928331-3fvsuh3qnnq5u2uf2n3ovuhn1q8k5kro.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
