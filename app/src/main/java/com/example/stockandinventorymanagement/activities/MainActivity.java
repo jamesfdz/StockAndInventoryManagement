@@ -86,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.logout:
                 FirebaseAuth.getInstance().signOut();
+                return true;
             default:
                 break;
         }
