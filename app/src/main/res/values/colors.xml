@@ -5,4 +5,5 @@
     <color name="colorAccent">#D81B60</color>
     <color name="textColorWhite">#FFFFFF</color>
     <color name="black">#000000</color>
+    <color name="activity_bg_color">#008577</color>
 </resources>

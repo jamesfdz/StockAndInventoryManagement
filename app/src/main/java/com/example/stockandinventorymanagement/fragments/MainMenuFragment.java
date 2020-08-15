@@ -38,7 +38,7 @@ public class MainMenuFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setHasOptionsMenu(true);
+        setHasOptionsMenu(true);
     }
 
     @Override
@@ -120,5 +120,11 @@ public class MainMenuFragment extends Fragment {
                 navController.navigate(R.id.action_nav_main_menu_to_nav_new);
             }
         });
+    }
+
+    @Override
+    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+        inflater.inflate(R.menu.main, menu);
     }
 }
