@@ -18,6 +18,7 @@ import android.webkit.WebView;
 import android.widget.Toast;
 
 import com.example.stockandinventorymanagement.R;
+import com.example.stockandinventorymanagement.fragments.AddCustomerFragment;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -44,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(R.id.nav_main_menu, R.id.nav_goods, R.id.nav_documents,
                 R.id.nav_expenses, R.id.nav_reports, R.id.nav_suppliers, R.id.nav_customers, R.id.nav_stores, R.id.nav_settings,
-                R.id.nav_question, R.id.nav_help, R.id.nav_new)
+                R.id.nav_question, R.id.nav_help, R.id.nav_new, R.id.addCustomerFragment)
                 .setDrawerLayout(drawerLayout)
                 .build();
 
@@ -89,10 +90,14 @@ public class MainActivity extends AppCompatActivity {
                 FirebaseAuth.getInstance().signOut();
                 updateUI(null);
                 return true;
+            case R.id.addcustomer_save:
+                AddCustomerFragment addCustomerFragment = new AddCustomerFragment();
+                addCustomerFragment.saveData_toFirebase();
+                super.onBackPressed();
+                return true;
             default:
                 break;
         }
-
         NavController navController = Navigation.findNavController(this, R.id.fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration) || super.onSupportNavigateUp();
     }

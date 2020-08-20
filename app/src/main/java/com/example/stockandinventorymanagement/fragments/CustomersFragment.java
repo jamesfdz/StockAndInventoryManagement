@@ -82,7 +82,6 @@ public class CustomersFragment extends Fragment {
         addCustBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO send to add customer page
                 navController.navigate(R.id.action_nav_customers_to_addCustomerFragment);
             }
         });

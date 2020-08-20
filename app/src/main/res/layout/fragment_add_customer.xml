@@ -11,86 +11,189 @@
         android:layout_height="match_parent">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout"
+            android:id="@+id/nameInputLayout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="6dp"
             android:layout_marginEnd="8dp"
-            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintEnd_toStartOf="@+id/customer_getdata"
             app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="spread"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/customer_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Customer Name"
+                android:hint="Name"
                 android:inputType="textPersonName" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/customer_getdata"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginTop="18dp"
             android:layout_marginEnd="8dp"
+            android:baselineAlignBottom="true"
             android:src="@drawable/addcustomers_contact"
+            app:layout_constraintBaseline_toBaselineOf="@+id/nameInputLayout"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/textInputLayout"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toEndOf="@id/nameInputLayout" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="wrap_content"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/address_inputLayout"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name"
-            app:layout_constraintEnd_toStartOf="@+id/imageView3"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/address_image"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+            app:layout_constraintTop_toBottomOf="@id/nameInputLayout">
+
+            <EditText
+                android:id="@+id/customer_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="textPostalAddress"
+                 />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:id="@+id/address_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:baselineAlignBottom="true"
             android:src="@drawable/addcustomers_map"
+            app:layout_constraintBaseline_toBaselineOf="@id/address_inputLayout"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/editTextTextPersonName2"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+            app:layout_constraintStart_toEndOf="@id/address_inputLayout" />
 
-        <EditText
-            android:id="@+id/editTextTextEmailAddress"
-            android:layout_width="wrap_content"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_inputLayout"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            app:layout_constraintEnd_toStartOf="@+id/imageView4"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/email_image"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+            app:layout_constraintTop_toBottomOf="@id/address_inputLayout">
+
+            <EditText
+                android:id="@+id/customer_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                 />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:id="@+id/email_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:baselineAlignBottom="true"
             android:src="@drawable/addcustomers_email"
+            app:layout_constraintBaseline_toBaselineOf="@id/email_inputLayout"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/editTextTextEmailAddress"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+            app:layout_constraintStart_toEndOf="@+id/email_inputLayout" />
 
-        <EditText
-            android:id="@+id/editTextPhone"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phone_inputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/message_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/email_inputLayout">
+
+            <EditText
+                android:id="@+id/customer_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Phone"
+                android:inputType="phone"
+                 />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/message_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="phone"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="8dp"
+            android:baselineAlignBottom="true"
+            app:layout_constraintBaseline_toBaselineOf="@id/phone_inputLayout"
+            android:src="@drawable/addcustomers_message"
+            app:layout_constraintEnd_toStartOf="@id/call_image"
+            app:layout_constraintStart_toEndOf="@id/phone_inputLayout"
+            tools:layout_editor_absoluteY="222dp" />
+
+        <ImageView
+            android:id="@+id/call_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:baselineAlignBottom="true"
+            app:layout_constraintBaseline_toBaselineOf="@id/phone_inputLayout"
+            android:src="@drawable/addcustomers_call"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/message_image"
+            tools:layout_editor_absoluteY="222dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/notes_inputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+            app:layout_constraintTop_toBottomOf="@id/phone_inputLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/customer_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Notes"
+                android:inputType="text"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/discount_inputlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/notes_inputLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/customer_discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Discount(%)"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:text="0.00" />
+        </com.google.android.material.textfield.TextInputLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
