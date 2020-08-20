@@ -76,6 +76,7 @@ public class LoginActivity extends AppCompatActivity {
     private void sendToMainActivity() {
         Intent send_to_main = new Intent(LoginActivity.this, MainActivity.class);
         startActivity(send_to_main);
+        finish();
     }
 
     private void createRequest() {

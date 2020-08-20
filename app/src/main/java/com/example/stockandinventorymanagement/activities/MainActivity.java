@@ -71,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
         }else{
             Intent main_to_login = new Intent(MainActivity.this, LoginActivity.class);
             startActivity(main_to_login);
+            finish();
         }
     }
 
@@ -86,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.logout:
                 FirebaseAuth.getInstance().signOut();
+                updateUI(null);
                 return true;
             default:
                 break;

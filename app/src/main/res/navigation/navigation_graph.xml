@@ -67,7 +67,11 @@
         android:id="@id/nav_customers"
         android:name="com.example.stockandinventorymanagement.fragments.CustomersFragment"
         android:label="Customers"
-        tools:layout="@layout/fragment_customers" />
+        tools:layout="@layout/fragment_customers" >
+        <action
+            android:id="@+id/action_nav_customers_to_addCustomerFragment"
+            app:destination="@id/addCustomerFragment" />
+    </fragment>
     <fragment
         android:id="@id/nav_stores"
         android:name="com.example.stockandinventorymanagement.fragments.StoresFragment"
@@ -88,4 +92,9 @@
         android:name="com.example.stockandinventorymanagement.fragments.WhatsNewFragment"
         android:label="What's New"
         tools:layout="@layout/fragment_whats_new" />
+    <fragment
+        android:id="@+id/addCustomerFragment"
+        android:name="com.example.stockandinventorymanagement.fragments.AddCustomerFragment"
+        android:label="@string/add_customers_title"
+        tools:layout="@layout/fragment_add_customer" />
 </navigation>

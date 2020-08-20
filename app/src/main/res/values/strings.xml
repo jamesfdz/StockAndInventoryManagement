@@ -7,6 +7,7 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="google_sign_up">Sign Up With Google</string>
     <string name="logout">Logout</string>
+    <string name="add_customers_title">Add customer</string>
 
     <!--    What's new content  -->
     <string name="whats_new_content">
