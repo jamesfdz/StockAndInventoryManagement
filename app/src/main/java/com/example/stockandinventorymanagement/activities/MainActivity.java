@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         mAppBarConfiguration = new AppBarConfiguration.Builder(R.id.nav_main_menu, R.id.nav_goods, R.id.nav_documents,
                 R.id.nav_expenses, R.id.nav_reports, R.id.nav_suppliers, R.id.nav_customers, R.id.nav_stores, R.id.nav_settings,
                 R.id.nav_question, R.id.nav_help, R.id.nav_new, R.id.addCustomerFragment)
-                .setDrawerLayout(drawerLayout)
+                .setOpenableLayout(drawerLayout)
                 .build();
 
         NavController navController = Navigation.findNavController(this, R.id.fragment);
@@ -91,10 +91,7 @@ public class MainActivity extends AppCompatActivity {
                 updateUI(null);
                 return true;
             case R.id.addcustomer_save:
-                AddCustomerFragment addCustomerFragment = new AddCustomerFragment();
-                addCustomerFragment.saveData_toFirebase();
-                super.onBackPressed();
-                return true;
+                return false;
             default:
                 break;
         }
