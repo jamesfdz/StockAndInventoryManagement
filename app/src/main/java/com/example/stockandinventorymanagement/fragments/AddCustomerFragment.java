@@ -173,8 +173,7 @@ public class AddCustomerFragment extends Fragment {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-        switch(item.getItemId()){
-            case R.id.addcustomer_save:
+        if(item.getItemId() == R.id.addcustomer_save){
                 if(isEmailValid && isPhoneValid && isNameEmpty){
                     String name = customer_name.getText().toString();
                     String address = customer_address.getText().toString();
@@ -187,8 +186,8 @@ public class AddCustomerFragment extends Fragment {
                     Toast.makeText(getActivity().getApplicationContext(), "Please enter all the required details", Toast.LENGTH_SHORT).show();
                 }
                 return true;
-            default:
-                return super.onOptionsItemSelected(item);
+        }else{
+            return super.onOptionsItemSelected(item);
         }
     }
 
